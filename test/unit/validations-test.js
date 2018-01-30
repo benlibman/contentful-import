@@ -168,7 +168,6 @@ test('payload validation should succeed when given a valid payload', (t) => {
       assets: []
     })
   } catch (e) {
-    debugger
     t.fail('it should not throw an error')
   }
   t.pass('it should suceed')
