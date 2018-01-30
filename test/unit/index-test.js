@@ -28,11 +28,13 @@ const transformSpaceStub = sinon.stub().returns(Promise.resolve({
     {
       name: 'German (Germany)',
       code: 'de-DE',
+      internal_code: 'de-DE',
       default: false
     },
     {
       name: 'U.S. English',
       code: 'en-US',
+      internal_code: 'en-US',
       default: true
     }
   ]
@@ -110,12 +112,14 @@ test('Stops import when default locales does not match', (t) => {
       locales: [
         {
           name: 'German (Germany)',
+          internal_code: 'de-DE',
           code: 'de-DE',
           default: false
         },
         {
           name: 'U.S English',
           code: 'en-US',
+          internal_code: 'en-US',
           default: true
         }
       ]
