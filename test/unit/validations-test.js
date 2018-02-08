@@ -174,7 +174,7 @@ test('payload validation should succeed when given a valid payload', (t) => {
   t.end()
 })
 
-test.only('payload validation should fail when given an invalid data', (t) => {
+test('payload validation should fail when given an invalid data', (t) => {
   t.plan(4)
   const brokenAsset = {
     sys: {id: 'myAsset'},
